@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+export DATABASE="./my.sqlite.db"
+KNEX_FILE=".knex/knexfile.js"
+rimraf my.sqlite.db && ## start from scratch
+rimraf node_modules/.cache  && ## see: https://github.com/standard-things/esm/issues/855
+node -r esm node_modules/.bin/knex --knexfile $KNEX_FILE migrate:latest  && 
+node -r esm node_modules/.bin/knex --knexfile $KNEX_FILE seed:run latest &&
+node .

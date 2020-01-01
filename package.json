@@ -1,0 +1,20 @@
+{
+  "name": "@knex/migrations",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "knex": "^0.20.6",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^13.1.2",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.4"
+  },
+  "scripts": {
+    "migrate": "./migrate"
+  }
+}
