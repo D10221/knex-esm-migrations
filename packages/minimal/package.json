@@ -1,9 +1,11 @@
 {
-  "name": "esm-samples",
+  "name": "@d10221/knex-esm-migrations-minimal",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "private": true,
   "dependencies": {
+    "@knex/cli": "0.20.6-beta1",
     "esm": "^3.2.25",
     "knex": "^0.20.6",
     "sqlite3": "^4.1.1"

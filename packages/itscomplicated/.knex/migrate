@@ -5,7 +5,7 @@ script="console.log(require('$__DIRNAME__').connection.filename)"
 export DATABASE=$(node -r esm --eval $script)
 echo "using DATABASE: $DATABASE"
 node_modules="$__DIRNAME__/../node_modules"
-export KNEX="$node_modules/.bin/knex"
+export KNEX="$node_modules/.bin/knex-cli"
 echo "using KNEX: $KNEX"
 export KNEX_FILE="$__DIRNAME__/knexfile.js"
 echo "$using KNEXFILE: $KNEX_FILE"

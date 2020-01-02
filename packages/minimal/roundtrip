@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+rimraf my.sqlite.db && ./knex migrate:latest &&  ./knex seed:run latest && ./run

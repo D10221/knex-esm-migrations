@@ -3,3 +3,4 @@
 *.db
 *.lock
 **/.temp/*
+*.log

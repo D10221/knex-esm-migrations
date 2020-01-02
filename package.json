@@ -9,5 +9,8 @@
   "author": "D10221",
   "workspaces": [
     "./packages/*"
-  ]
+  ],
+  "dependencies": {
+    
+  }
 }

@@ -4,11 +4,13 @@
   "main": "index.js",
   "type": "module",
   "license": "MIT",
+  "private": true,
   "dependencies": {
-    "esm": "^3.2.25",
-    "knex": "^0.20.6",
+    "@knex/cli": "0.20.6-beta1",
+    "esm": "^3.2.25",    
     "rimraf": "^3.0.0",
-    "sqlite3": "^4.1.1"
+    "sqlite3": "^4.1.1",
+    "knex": "^0.20.6"
   },
   "scripts": {
     "migrate": "./migrate"

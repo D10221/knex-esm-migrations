@@ -1,0 +1,9 @@
+{
+  "name": "@knex/cli",
+  "version": "0.20.6-beta1",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": {
+    "knex-cli": "bin/knex.js"
+  }
+}

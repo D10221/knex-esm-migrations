@@ -1,5 +1,21 @@
+/** @type {import("knex").Config}*/
+const config = {
+  client: "sqlite3",
+  connection: {
+    filename: "./my.sqlite.db",
+  },
+  migrations: {
+    directory: "./migrations",
+    loadExtensions: [".js"],
+  },
+  seeds: {
+    directory: "./seeds",
+    loadExtensions: [".js"],
+  },
+};
+/** default export */
+export default config;
 /** 
- * Have to re-export defaul 
- * because Knex looks into named exports 
- * it doesn't see 'default' */
-module.exports = require("esm")(module)("./knex.file.js").default;
+ * Accesible as named exports
+ */
+export const { client, connection, migrations, seeds } = config;

@@ -1,6 +1,5 @@
 import Knex from "knex";
-import knexfile from "./knex.file.js";
-console.log(knexfile);
+import knexfile from "./knexfile.js";
 
 const knex = Knex(knexfile);
 knex("user")
