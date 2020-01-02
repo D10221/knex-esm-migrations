@@ -1,20 +1,4 @@
-import {resolve, dirname } from "path";
-import { fileURLToPath } from 'url';
-
-/** @type {import("knex").Config} */
-const config = {
-  client: "sqlite3",
-  connection: {
-    filename: resolve(dirname(fileURLToPath(import.meta.url)), "../my.sqlite.db"),
-  },
-  migrations: {
-    directory: "./migrations",
-    loadExtensions: [".js"],
-  },
-  seeds: {
-    directory: "./seeds",
-  },
-};
-export default config;
-/** Note: knex is looking on modules.exports , not module.exports.default */
-export const { client, connection, migrations, seeds } = config;
+// Set options as a parameter, environment variable, or rc file.
+// eslint-disable-next-line no-global-assign
+require = require("esm")(module/* , options */)
+module.exports = require("./knexfile.esm.js").default

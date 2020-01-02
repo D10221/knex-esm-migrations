@@ -1,2 +1,16 @@
 #!/usr/bin/env sh
-node -r esm node_modules/.bin/knex --knexfile .knex/knexfile.js migrate:$*
+__DIRNAME__=$(dirname $(readlink -f $0))
+script="console.log(require('$__DIRNAME__').connection.filename)"
+export DATABASE=$(node -r esm --eval $script)
+echo "using DATABASE: $DATABASE"
+node_modules="$__DIRNAME__/../node_modules"
+export KNEX="$node_modules/.bin/knex"
+echo "using KNEX: $KNEX"
+export KNEX_FILE="$__DIRNAME__/knexfile.js"
+echo "$using KNEXFILE: $KNEX_FILE"
+rimraf="$node_modules/.bin/rimraf"
+$rimraf $DATABASE && # start from scratch
+$rimraf "$node_modules/.cache" && # start from scratch, see: https://github.com/standard-things/esm/issues/855
+node -r esm $KNEX --knexfile $KNEX_FILE migrate:latest &&
+node -r esm $KNEX --knexfile $KNEX_FILE seed:run latest &&
+echo "Migrated"

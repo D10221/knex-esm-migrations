@@ -1,2 +1,0 @@
-#!/usr/bin/env sh
-node -r esm node_modules/.bin/knex --knexfile .knex/knexfile.js seed:$*

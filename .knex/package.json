@@ -1,7 +1,8 @@
 {
-  "name": "@knex/migration",
+  "name": "@knex/migrations",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "knexfile.js",
+  "module": "knexfile.esm.js",
   "license": "MIT",
   "private": true
 }
