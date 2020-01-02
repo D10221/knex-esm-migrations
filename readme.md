@@ -1,4 +1,4 @@
-Using ['esm'](3) to run [Knex](4) migrations, seeeds and configuration with Native NodeJS [ECMAScript Modules](2) and only '.js' extension
+Using ['esm'](3) to run [Knex](1) migrations, seeeds and configuration with Native NodeJS [ECMAScript Modules](2) and only '.js' extension
 
 Two use cases:
 
@@ -17,4 +17,3 @@ Two use cases:
 [1]: https://github.com/knex/knex
 [2]: https://nodejs.org/docs/latest-v13.x/api/esm.html
 [3]: https://github.com/standard-things/esm
-[4]: https://github.com/knex/knex
