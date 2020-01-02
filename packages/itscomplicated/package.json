@@ -1,13 +1,18 @@
 {
   "name": "@d10221/knex-esm-migrations",
-  "private": true,
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
   "license": "MIT",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "knex": "^0.20.6",
+    "rimraf": "^3.0.0",
+    "sqlite3": "^4.1.1"
+  },
+  "scripts": {
+    "migrate": "./migrate"
+  },
   "repository": "https://github.com/D10221/knex-esm-migrations.git",
-  "author": "D10221",
-  "workspaces": [
-    "./packages/*"
-  ]
+  "author": "D10221"
 }

@@ -1,28 +1,20 @@
-Running [knex](https://github.com/knex/knex) migrations with native ESM Modules from a Native ESM Module project/package
+Using ['esm'](3) to run [Knex](4) migrations, seeeds and configuration with Native NodeJS [ECMAScript Modules](2) and only '.js' extension
 
-#### The gist:
-    
-    $ yarn add esm
-    $ node -r esm node_modules/.bin/knex $*
+Two use cases:
 
-#### The hack:
+1) Running [knex](1) migrations  
+With native ESM Modules  
+Using ONE shared configuration  
+When the MAIN/project/package type is `module`.  
+See `./packages/itscomplicated`
 
-Put all knex configuration, migration, and scripts inside a pseudo package  
-the package "doesn't" set type='module'.
+2) Running [knex](4) migrations  
+With native ESM Modules  
+From a NON Native ESM Module MAIN/project/package.  
+When the MAIN/project/package type is NOT `module`.  
+see `./packages/minimal`
 
-### The hack is NOT needed if the MAIN package is NOT of type 'module'
-
-    $ touch ./.knex/package.json
-
-Working on Node <= 12
-
-    $ nvm use 12 \
-        && yarn add sqlite3 && .knex/migrate \
-            && node -r esm .
-
-Working on Node >= 13
-
-    $ nvm use 13
-        && yarn add sqlite3
-            && .knex/migrate
-                && node . # no need to load esm
+[1]: https://github.com/knex/knex
+[2]: https://nodejs.org/docs/latest-v13.x/api/esm.html
+[3]: https://github.com/standard-things/esm
+[4]: https://github.com/knex/knex

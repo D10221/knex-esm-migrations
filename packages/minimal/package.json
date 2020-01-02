@@ -1,0 +1,11 @@
+{
+  "name": "esm-samples",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "knex": "^0.20.6",
+    "sqlite3": "^4.1.1"
+  }
+}

@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 __DIRNAME__=$(dirname $(readlink -f $0))
 script="console.log(require('$__DIRNAME__').connection.filename)"
+# grabbing the dp path from existsing configuration
 export DATABASE=$(node -r esm --eval $script)
 echo "using DATABASE: $DATABASE"
 node_modules="$__DIRNAME__/../node_modules"

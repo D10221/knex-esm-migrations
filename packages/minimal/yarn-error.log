@@ -1,0 +1,36 @@
+Arguments: 
+  /home/daniel/.nvm/versions/node/v13.5.0/bin/node /usr/bin/yarn init
+
+PATH: 
+  /home/daniel/.nvm/versions/node/v13.5.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/daniel/.dotnet/tools:/usr/lib/jvm/java-10-oracle/bin:/usr/lib/jvm/java-10-oracle/db/bin:/home/daniel/.dotnet/tools:/usr/lib/jvm/java-10-oracle/bin:/usr/lib/jvm/java-10-oracle/db/bin:/home/daniel/usr/local/android-studio/bin:/home/daniel/bin:/home/daniel/usr/local/android-studio/bin:/home/daniel/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  13.5.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:136724:13)
+      at Interface.emit (events.js:305:20)
+      at Interface._ttyWrite (readline.js:882:16)
+      at ReadStream.onkeypress (readline.js:199:10)
+      at ReadStream.emit (events.js:305:20)
+      at emitKeys (internal/readline/utils.js:439:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1150:36)
+      at ReadStream.emit (events.js:305:20)
+      at addChunk (_stream_readable.js:341:12)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
