@@ -21,5 +21,8 @@
   },
   "scripts": {
     "test": "mocha -r esm"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
