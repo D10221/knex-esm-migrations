@@ -14,7 +14,7 @@ Two use cases:
    When the MAIN/project/package type is NOT `module`.  
    see [`./packages/minimal`](./packages/minimal/readme.md)
 
-[Knex cli ESM Inerop (knexesm)](.packages/knex-cli):  
+[Knex cli ESM Inerop (knexesm)](https://github.com/D10221/knex-esm-migrations/tree/master/packages/knex-cli):  
    Utility wrapper to enable ESM interop for Knex migrations. seeds, configuration
 
 [1]: https://github.com/knex/knex
