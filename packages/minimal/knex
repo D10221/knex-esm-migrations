@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-node ../../node_modules/.bin/knex-cli $*
+node ../../node_modules/.bin/knexesm $*

@@ -1,9 +1,15 @@
 {
-  "name": "@knex/cli",
+  "name": "knexesm",
   "version": "0.20.6-beta1",
-  "main": "index.js",
+  "description": "knex cli ESM interop",
+  "main": "bin/knex.js",
   "license": "MIT",
   "bin": {
-    "knex-cli": "bin/knex.js"
-  }
+    "knexesm": "bin/knex.js"
+  },
+  "dependencies": {
+    "knex": "^0.20.6"
+  },
+  "repository": "https://github.com/D10221/knex-esm-migrations/tree/%40knex/cli/packages/knex-cli",
+  "author": "D10221"
 }
