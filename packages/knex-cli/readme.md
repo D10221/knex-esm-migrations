@@ -12,4 +12,4 @@ Install & Usage:
     $ node modules/.bin/knexesm [knex-as-usual]
 
 
-See [../packages/minimal](../minimal) for details
+See [../packages/minimal](../minimal) for details.

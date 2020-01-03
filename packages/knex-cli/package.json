@@ -8,8 +8,18 @@
     "knexesm": "bin/knex.js"
   },
   "dependencies": {
+    "esm": "^3.2.25",
     "knex": "^0.20.6"
   },
   "repository": "https://github.com/D10221/knex-esm-migrations/tree/%40knex/cli/packages/knex-cli",
-  "author": "D10221"
+  "author": "D10221",
+  "files": [
+    "bin/knex.js"
+  ],
+  "devDependencies": {
+    "mocha": "^6.2.2"
+  },
+  "scripts": {
+    "test": "mocha -r esm"
+  }
 }
